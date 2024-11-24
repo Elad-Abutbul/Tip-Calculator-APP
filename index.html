@@ -7,90 +7,70 @@
 </head>
 
 <body>
-     <div> <!-- Left Side (Input Section) -->
+
+     <div class="input-section"> <!-- Left Side (Input Section) -->
 
           <!-- Bill Input Section -->
-          <div>
-               <div>
-                    <label for="bill">Bill</label>
-                    <div>
-                         <span>
-                              <!-- dollar sign -->
-                         </span>
-                         <input type="number" id="bill" placeholder="0" /> <!-- Input for Bill Amount -->
-                    </div>
+          <div class="input-group">
+               <label for="bill" class="label">Bill</label>
+               <div class="input-container">
+                    <span class="currency-sign">
+                         <!-- dollar sign -->
+                    </span>
+                    <input type="number" id="bill" class="input-field" placeholder="0" /> <!-- Input for Bill Amount -->
                </div>
           </div>
 
           <!-- Tip Percentage Options -->
-          <div>
-               <!-- Tip Button 5% -->
-               <button>
+          <div class="tip-buttons">
+               <button class="tip-button" id="tip-5">
                     <span>5</span><span>%</span>
                </button>
-
-               <!-- Tip Button 10% -->
-               <button>
+               <button class="tip-button" id="tip-10">
                     <span>10</span><span>%</span>
                </button>
-
-               <!-- Tip Button 15% -->
-               <button>
+               <button class="tip-button" id="tip-15">
                     <span>15</span><span>%</span>
                </button>
-
-               <!-- Tip Button 25% -->
-               <button>
+               <button class="tip-button" id="tip-25">
                     <span>25</span><span>%</span>
                </button>
-
-               <!-- Custom Tip Input -->
-               <button>
+               <button class="tip-button" id="tip-custom">
                     Custom
                </button>
           </div>
 
           <!-- Number of People Input Section -->
-          <div>
-               <label for="peopleNum">Number Of People</label>
-               <div>
-                    <span>
-                         <!-- person -->
-                    </span>
-                    <input type="number" id="peopleNum" placeholder="0" /> <!-- Input for Number of People -->
+          <div class="input-group">
+               <label for="peopleNum" class="label">Number of People</label>
+               <div class="input-container">
+                    <span class="person-icon">👤</span>
+                    <input type="number" id="peopleNum" class="input-field" placeholder="0" />
+                    <!-- Input for Number of People -->
                </div>
           </div>
      </div>
 
      <!-- Right Side (Calculation Display) -->
-     <div>
-          <div>
-               <div>
-                    <div>
-                         <p>Tip Amount </p>
-                         <p>/ person</p>
-                    </div>
-                    <h1>%0.00</h1>
+     <div class="calc-display">
+          <div class="calc-group">
+               <div class="calc-item">
+                    <p class="calc-label">Tip Amount</p>
+                    <p class="calc-per-person">/ person</p>
+                    <h1 class="calc-result" id="tipAmount">$0.00</h1>
                </div>
-               <div>
-                    <div>
-                         <p>Total</p>
-                         <p>/ person</p>
-                    </div>
-                    <h1>%0.00</h1>
+               <div class="calc-item">
+                    <p class="calc-label">Total</p>
+                    <p class="calc-per-person">/ person</p>
+                    <h1 class="calc-result" id="totalAmount">$0.00</h1>
                </div>
           </div>
 
           <!-- Reset Button -->
-          <div>
-               <button>
-                    RESET
-               </button>
+          <div class="reset-button">
+               <button id="resetBtn">RESET</button>
           </div>
      </div>
-
-
-
 
 </body>
 
