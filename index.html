@@ -8,28 +8,90 @@
 
 <body>
      <div> <!-- Left Side (Input Section) -->
+
+          <!-- Bill Input Section -->
           <div>
-               <div><!-- Input for Bill Amount --></div>
-               <div> <!-- Tip Percentage Options -->
-                    <div><!-- Tip Button 5% --></div>
-                    <div><!-- Tip Button 10% --></div>
-                    <div><!-- Tip Button 15% --></div>
-                    <div><!-- Tip Button 25% --></div>
-                    <div><!-- Custom Tip Input --></div>
+               <div>
+                    <label for="bill">Bill</label>
+                    <div>
+                         <span>
+                              <!-- dollar sign -->
+                         </span>
+                         <input type="number" id="bill" placeholder="0" /> <!-- Input for Bill Amount -->
+                    </div>
                </div>
-               <div><!-- Input for Number of People --></div>
-          </div> <!-- ********************* --> <!-- Right Side (Calculation Display) -->
+          </div>
+
+          <!-- Tip Percentage Options -->
+          <div>
+               <!-- Tip Button 5% -->
+               <button>
+                    <span>5</span><span>%</span>
+               </button>
+
+               <!-- Tip Button 10% -->
+               <button>
+                    <span>10</span><span>%</span>
+               </button>
+
+               <!-- Tip Button 15% -->
+               <button>
+                    <span>15</span><span>%</span>
+               </button>
+
+               <!-- Tip Button 25% -->
+               <button>
+                    <span>25</span><span>%</span>
+               </button>
+
+               <!-- Custom Tip Input -->
+               <button>
+                    Custom
+               </button>
+          </div>
+
+          <!-- Number of People Input Section -->
+          <div>
+               <label for="peopleNum">Number Of People</label>
+               <div>
+                    <span>
+                         <!-- person -->
+                    </span>
+                    <input type="number" id="peopleNum" placeholder="0" /> <!-- Input for Number of People -->
+               </div>
+          </div>
+     </div>
+
+     <!-- Right Side (Calculation Display) -->
+     <div>
           <div>
                <div>
                     <div>
-                         <div><!-- Display Tip Amount per Person --></div>
-                         <div><!-- Display Total Amount per Person --></div>
+                         <p>Tip Amount </p>
+                         <p>/ person</p>
                     </div>
-                    <div><!-- Reset Button --></div>
+                    <h1>%0.00</h1>
                </div>
-               <div><!-- Additional Space or Placeholder --></div>
-          </div> <!-- ********************* -->
+               <div>
+                    <div>
+                         <p>Total</p>
+                         <p>/ person</p>
+                    </div>
+                    <h1>%0.00</h1>
+               </div>
+          </div>
+
+          <!-- Reset Button -->
+          <div>
+               <button>
+                    RESET
+               </button>
+          </div>
      </div>
+
+
+
+
 </body>
 
 </html>
